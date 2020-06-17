@@ -1,0 +1,8 @@
+D:\prog C#\FinalHomework-Game\GameEventLib\bin\Debug\netstandard2.0\GameEventLib.deps.json
+D:\prog C#\FinalHomework-Game\GameEventLib\bin\Debug\netstandard2.0\GameEventLib.dll
+D:\prog C#\FinalHomework-Game\GameEventLib\bin\Debug\netstandard2.0\GameEventLib.pdb
+D:\prog C#\FinalHomework-Game\GameEventLib\obj\Debug\netstandard2.0\GameEventLib.csprojAssemblyReference.cache
+D:\prog C#\FinalHomework-Game\GameEventLib\obj\Debug\netstandard2.0\GameEventLib.AssemblyInfoInputs.cache
+D:\prog C#\FinalHomework-Game\GameEventLib\obj\Debug\netstandard2.0\GameEventLib.AssemblyInfo.cs
+D:\prog C#\FinalHomework-Game\GameEventLib\obj\Debug\netstandard2.0\GameEventLib.dll
+D:\prog C#\FinalHomework-Game\GameEventLib\obj\Debug\netstandard2.0\GameEventLib.pdb

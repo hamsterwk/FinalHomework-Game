@@ -12,7 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\prog C#\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,8 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,6 +48,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>86EE1B4D980E04F15841A71066F2416BA73821DA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FinalHomework-Game_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,63 +74,131 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter.cs" />
-    <Compile Include="Course.cs" />
-    <Compile Include="Event.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="GameSystem.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Classes\Chapter.cs" />
+    <Compile Include="Classes\Course.cs" />
+    <Compile Include="CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\_GameEvent.cs" />
+    <Compile Include="Classes\Game.cs" />
+    <Compile Include="Classes\GameArchive.cs" />
+    <Compile Include="Classes\GameResult.cs" />
+    <Compile Include="Classes\GameSystem.cs" />
+    <Compile Include="Forms\HelpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\HelpForm.designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Interval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Interval.Designer.cs">
+      <DependentUpon>Interval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MakePlan.cs">
+    <Compile Include="Forms\MakePlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MakePlan.Designer.cs">
+    <Compile Include="Forms\MakePlan.Designer.cs">
       <DependentUpon>MakePlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewGame.cs">
+    <Compile Include="Forms\NewGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewGame.Designer.cs">
+    <Compile Include="Forms\NewGame.Designer.cs">
       <DependentUpon>NewGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewGameStart.cs">
+    <Compile Include="Forms\NewGameStart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewGameStart.Designer.cs">
+    <Compile Include="Forms\NewGameStart.Designer.cs">
       <DependentUpon>NewGameStart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Plan.cs" />
+    <Compile Include="Classes\Plan.cs" />
+    <Compile Include="Forms\SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameEvent\GameEventBase.cs" />
+    <Compile Include="GameEvent\GameEventAdd.cs" />
+    <Compile Include="GameEvent\GameEventDefault.cs" />
+    <Compile Include="GameEvent\GameEventNull.cs" />
+    <Compile Include="GameEvent\GameEventSkip.cs" />
+    <Compile Include="GameEvent\GameEventSub.cs" />
+    <Compile Include="GameEvent\GameEventTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <Compile Include="Forms\ChoiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChoiceDialog.designer.cs">
+      <DependentUpon>ChoiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlertForm.designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameSaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameSaveForm.Designer.cs">
+      <DependentUpon>GameSaveForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Interval.resx">
+      <DependentUpon>Interval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MakePlan.resx">
+    <EmbeddedResource Include="Forms\MakePlan.resx">
       <DependentUpon>MakePlan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewGame.resx">
+    <EmbeddedResource Include="Forms\NewGame.resx">
       <DependentUpon>NewGame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewGameStart.resx">
+    <EmbeddedResource Include="Forms\NewGameStart.resx">
       <DependentUpon>NewGameStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Forms\ChoiceDialog.resx">
+      <DependentUpon>ChoiceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameSaveForm.resx">
+      <DependentUpon>GameSaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FinalHomework-Game_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -139,9 +220,59 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="ChapterData\in1.txt" />
-    <Content Include="ChapterData\in2.txt" />
+    <None Include="Images\MainGame.png" />
+    <None Include="Images\ChoiceForm.png" />
+    <None Include="Images\AlertForm.png" />
+    <Content Include="Images\background.png" />
+    <None Include="Images\LoadGame\Description.png" />
+    <None Include="Images\StartGame\PreBtn11.png" />
+    <None Include="Images\StartGame\NextBtn41.png" />
+    <None Include="Images\StartGame\NextBtn31.png" />
+    <None Include="Images\StartGame\NextBtn21.png" />
+    <None Include="Images\StartGame\NextBtn11.png" />
+    <None Include="Images\Button\Btn2003.png" />
+    <None Include="Images\Button\Btn2001.png" />
+    <None Include="Images\Button\Btn2000.png" />
+    <None Include="Images\StartGame\panel1.png" />
+    <None Include="Images\Button\Btn1001.png" />
+    <None Include="Images\Button\Btn1000.png" />
+    <None Include="Images\Button\Btn1.png" />
+    <None Include="Images\Button\Btn0.png" />
+    <None Include="Images\LoadGame\LoadConfirmBtn2.png" />
+    <None Include="Images\LoadGame\LoadConfirmBtn1.png" />
+    <None Include="Images\LoadGame\LoadConfirmBtn0.png" />
+    <None Include="Images\LoadGame\ReturnBtn2.png" />
+    <None Include="Images\LoadGame\ReturnBtn1.png" />
+    <None Include="Images\LoadGame\ReturnBtn0.png" />
+    <None Include="Images\LoadGame\LoadGame.png" />
+    <None Include="Images\StartGame\PreBtn4.png" />
+    <None Include="Images\StartGame\NextBtn4.png" />
+    <None Include="Images\StartGame\StartBtn3.png" />
+    <None Include="Images\StartGame\StartBtn2.png" />
+    <None Include="Images\StartGame\StartBtn1.png" />
+    <None Include="Images\StartGame\ReturnBtn3.png" />
+    <None Include="Images\StartGame\ReturnBtn2.png" />
+    <None Include="Images\StartGame\ReturnBtn1.png" />
+    <None Include="Images\StartGame\PreBtn3.png" />
+    <None Include="Images\StartGame\PreBtn2.png" />
+    <None Include="Images\StartGame\PreBtn1.png" />
+    <None Include="Images\StartGame\NextBtn3.png" />
+    <None Include="Images\StartGame\NextBtn2.png" />
+    <None Include="Images\StartGame\NextBtn1.png" />
+    <None Include="Images\StartGame\Hint2.png" />
+    <None Include="Images\StartGame\Hint1.png" />
+    <None Include="Images\StartMenu\新游戏-2.png" />
+    <None Include="Images\StartMenu\新游戏-1.png" />
+    <None Include="Images\StartMenu\新游戏.png" />
+    <None Include="Images\StartMenu\退出 游戏-2.png" />
+    <None Include="Images\StartMenu\退出 游戏-1.png" />
+    <None Include="Images\StartMenu\退出 游戏.png" />
+    <None Include="Images\StartMenu\加载 游戏-2.png" />
+    <None Include="Images\StartMenu\加载 游戏-1.png" />
+    <None Include="Images\StartMenu\加载 游戏.png" />
+    <None Include="Images\background_StartMenu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
