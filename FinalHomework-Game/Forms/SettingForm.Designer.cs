@@ -72,11 +72,12 @@
             this.PlaySpeedBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PlaySpeedBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.PlaySpeedBar.Location = new System.Drawing.Point(128, 3);
-            this.PlaySpeedBar.Maximum = 200;
+            this.PlaySpeedBar.Maximum = 50;
             this.PlaySpeedBar.Name = "PlaySpeedBar";
             this.PlaySpeedBar.Size = new System.Drawing.Size(240, 44);
             this.PlaySpeedBar.TabIndex = 1;
             this.PlaySpeedBar.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.PlaySpeedBar.Scroll += new System.EventHandler(this.PlaySpeedBar_Scroll);
             // 
             // ConfirmBtn
             // 

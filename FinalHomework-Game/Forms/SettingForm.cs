@@ -28,5 +28,10 @@ namespace FinalHomework_Game.Forms
         {
             PlaySpeedBar.Value = PlaySpeedBar.Maximum - GameSystem.DEFAULT_PLAYSPEED;
         }
+
+        private void PlaySpeedBar_Scroll(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -9,7 +9,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FinalHomework_Game.Forms;
 using FinalHomework_Game.GameEvent;
 
 namespace FinalHomework_Game
@@ -297,20 +296,18 @@ namespace FinalHomework_Game
 
         private void SetRightFocus(object sender, EventArgs e)
         {
-            RightFocus = -1;
             if (sender == null) return;
             Label label = (Label)sender;
             int idx = PlanLabelList.FindIndex(l=>l==label);
             if (StatusList[idx] == false) return;
+            RightFocus = -1;
             //移除旧焦点
             RightBarFocus.Font = new Font("宋体", 9);
             RightBarFocus.ForeColor = FontColor1;
-            RightBarFocus.BackColor = System.Drawing.Color.Transparent;
             RightBarFocus = label;
             //修改新焦点
             RightBarFocus.Font = new Font("宋体", 9, FontStyle.Bold);
-            RightBarFocus.ForeColor = FontColor3;
-            RightBarFocus.BackColor = FontColor1;
+            RightBarFocus.ForeColor = Color.Red;
             //label11.Text = RightBarFocus.Name;
             RightFocus = int.Parse(Regex.Replace(RightBarFocus.Name, @"[^0-9]+", ""));
         }
@@ -424,23 +421,15 @@ namespace FinalHomework_Game
         private void BtnList_Enter(object sender, EventArgs e)
         {
             Button BtnNow = (Button)sender;
-            int idx = BtnList.FindIndex(x => x == BtnNow);
-            if (StatusList[idx] == false)
-            {
-                BtnNow.BackColor = Color.Transparent;
-                BtnNow.ForeColor = FontColor1;
-                return;
-            }
-            BtnNow.BackColor = FontColor1;
-            BtnNow.ForeColor = FontColor3;
+            int idx = BtnList.FindIndex(l => l == BtnNow);
+            if (idx != -1 && StatusList[idx] == false) return;
+            BtnNow.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2001;
         }
 
         private void BtnList_Leave(object sender, EventArgs e)
         {
             Button BtnNow = (Button)sender;
-            int idx = BtnList.FindIndex(x => x == BtnNow);
-            BtnNow.BackColor = Color.Transparent;
-            BtnNow.ForeColor = FontColor1;
+            BtnNow.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
         }
 
         protected override CreateParams CreateParams

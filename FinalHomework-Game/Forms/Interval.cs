@@ -19,14 +19,13 @@ namespace FinalHomework_Game
         private Plan curPlan;
         private void SlowPrint(string str)
         {
-            LogBox.Text = "";
+            LogText.Text = "";
             Application.DoEvents();
             Thread.Sleep(500);
             foreach(char buf in str)
             {
-                LogBox.Text = LogBox.Text + buf;
-                LogBox.Select(LogBox.TextLength, 0);
-                LogBox.ScrollToCaret();
+                LogText.Text = LogText.Text + buf;
+                LogText.Refresh();
                 Thread.Sleep(GameSystem.DisplaySpeed);
             }
         }
@@ -92,6 +91,9 @@ namespace FinalHomework_Game
         public Interval(Game gamest, Plan newPlan)
         {
             InitializeComponent();
+            LogText.Parent = label1;
+            LogText.AutoSize = false;
+            LogText.Dock = DockStyle.Fill;
             this.TopLevel = false;
             PlayerName.Text = $"{gamest.PlayerName}的日记：";
             ContinueBtn.Enabled = false;

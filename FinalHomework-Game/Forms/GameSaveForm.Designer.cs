@@ -312,27 +312,35 @@
             // 
             // No2Button
             // 
+            this.No2Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No2Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No2Button.FlatAppearance.BorderSize = 0;
             this.No2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No2Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No2Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
+            this.No2Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No2Button.Location = new System.Drawing.Point(753, 108);
             this.No2Button.Name = "No2Button";
             this.No2Button.Size = new System.Drawing.Size(38, 57);
             this.No2Button.TabIndex = 9;
+            this.No2Button.Text = "确认";
             this.No2Button.UseVisualStyleBackColor = true;
             // 
             // No1Button
             // 
             this.No1Button.BackColor = System.Drawing.Color.Transparent;
+            this.No1Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No1Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No1Button.FlatAppearance.BorderSize = 0;
             this.No1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No1Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No1Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.No1Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No1Button.Location = new System.Drawing.Point(753, 45);
             this.No1Button.Name = "No1Button";
             this.No1Button.Size = new System.Drawing.Size(38, 57);
             this.No1Button.TabIndex = 25;
+            this.No1Button.Text = "确认";
             this.No1Button.UseVisualStyleBackColor = false;
             this.No1Button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Confirm_MouseDown);
             this.No1Button.MouseEnter += new System.EventHandler(this.Confirm_MouseEnter);
@@ -340,50 +348,66 @@
             // 
             // No3Button
             // 
+            this.No3Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No3Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No3Button.FlatAppearance.BorderSize = 0;
             this.No3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No3Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No3Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
+            this.No3Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No3Button.Location = new System.Drawing.Point(753, 171);
             this.No3Button.Name = "No3Button";
             this.No3Button.Size = new System.Drawing.Size(38, 57);
             this.No3Button.TabIndex = 26;
+            this.No3Button.Text = "确认";
             this.No3Button.UseVisualStyleBackColor = true;
             // 
             // No4Button
             // 
+            this.No4Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No4Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No4Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No4Button.FlatAppearance.BorderSize = 0;
             this.No4Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No4Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No4Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
+            this.No4Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No4Button.Location = new System.Drawing.Point(753, 234);
             this.No4Button.Name = "No4Button";
             this.No4Button.Size = new System.Drawing.Size(38, 57);
             this.No4Button.TabIndex = 27;
+            this.No4Button.Text = "确认";
             this.No4Button.UseVisualStyleBackColor = true;
             // 
             // No5Button
             // 
+            this.No5Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No5Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No5Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No5Button.FlatAppearance.BorderSize = 0;
             this.No5Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No5Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No5Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
+            this.No5Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No5Button.Location = new System.Drawing.Point(753, 297);
             this.No5Button.Name = "No5Button";
             this.No5Button.Size = new System.Drawing.Size(38, 57);
             this.No5Button.TabIndex = 28;
+            this.No5Button.Text = "确认";
             this.No5Button.UseVisualStyleBackColor = true;
             // 
             // No6Button
             // 
+            this.No6Button.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.No6Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.No6Button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.No6Button.FlatAppearance.BorderSize = 0;
             this.No6Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.No6Button.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+            this.No6Button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
+            this.No6Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.No6Button.Location = new System.Drawing.Point(753, 360);
             this.No6Button.Name = "No6Button";
             this.No6Button.Size = new System.Drawing.Size(38, 57);
             this.No6Button.TabIndex = 29;
+            this.No6Button.Text = "确认";
             this.No6Button.UseVisualStyleBackColor = true;
             // 
             // retBtn

@@ -19,7 +19,7 @@ namespace FinalHomework_Game
         public static List<Game> SaveGameList;
         public static string chapterDir = @"ChapterData";
         public static int[] month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-        public static int DisplaySpeed = 50;
+        public static int DisplaySpeed = 10;
         public static string[] TimeName = {"上午", "中午", "晚上" };
         public static List<List<string>> LogList;
         public static int ErrorCode=0;
@@ -37,7 +37,7 @@ namespace FinalHomework_Game
             "（这门课此后的复习效率都会有所提升。）",
             "（这个时间段的复习计划被替换了。）",
             };
-        internal static readonly int DEFAULT_PLAYSPEED = 50;
+        internal static readonly int DEFAULT_PLAYSPEED = 10;
         public static int EventWeightSum=0;//事件权重之和。
         public static List<Type> Eventtypes;
         static void ReadChapter()

@@ -188,20 +188,19 @@ namespace FinalHomework_Game
 		private void Confirm_MouseEnter(object sender, EventArgs e)
 		{
 			Button Btn = (Button)sender;
-			Btn.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn1;
+			Btn.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2001;
 		}
 
 		private void Confirm_MouseLeave(object sender, EventArgs e)
 		{
 			Button Btn = (Button)sender;
-			Btn.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn0;
+			Btn.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
 
 		}
 
 		private void Confirm_MouseDown(object sender, EventArgs e)
 		{
-			Button Btn = (Button)sender;
-			Btn.Image = global::FinalHomework_Game.Properties.Resources.LoadConfirmBtn2;
+
 		}
 
 		protected override CreateParams CreateParams

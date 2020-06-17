@@ -63,18 +63,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.PressureBar = new FinalHomework_Game.CustomProgressBar();
             this.datePanel.SuspendLayout();
             this.CourseTablePanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Date
@@ -84,7 +78,7 @@
             this.Date.Location = new System.Drawing.Point(3, 2);
             this.Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(194, 28);
+            this.Date.Size = new System.Drawing.Size(393, 28);
             this.Date.TabIndex = 0;
             this.Date.Text = "1 月 1 日";
             this.Date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,7 +90,7 @@
             this.TurnText.Location = new System.Drawing.Point(8, 35);
             this.TurnText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
             this.TurnText.Name = "TurnText";
-            this.TurnText.Size = new System.Drawing.Size(189, 28);
+            this.TurnText.Size = new System.Drawing.Size(388, 28);
             this.TurnText.TabIndex = 1;
             this.TurnText.Text = "第 1 天";
             this.TurnText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,7 +104,7 @@
             this.datePanel.Location = new System.Drawing.Point(14, 29);
             this.datePanel.Margin = new System.Windows.Forms.Padding(3, 0, 0, 50);
             this.datePanel.Name = "datePanel";
-            this.datePanel.Size = new System.Drawing.Size(200, 106);
+            this.datePanel.Size = new System.Drawing.Size(396, 106);
             this.datePanel.TabIndex = 2;
             // 
             // PlayerName
@@ -120,7 +114,7 @@
             this.PlayerName.Location = new System.Drawing.Point(8, 65);
             this.PlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
             this.PlayerName.Name = "PlayerName";
-            this.PlayerName.Size = new System.Drawing.Size(189, 35);
+            this.PlayerName.Size = new System.Drawing.Size(388, 35);
             this.PlayerName.TabIndex = 2;
             this.PlayerName.Text = "玩家名称";
             this.PlayerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -235,10 +229,13 @@
             // 
             // ClearNight
             // 
+            this.ClearNight.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn1000;
+            this.ClearNight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClearNight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ClearNight.FlatAppearance.BorderSize = 0;
             this.ClearNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearNight.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ClearNight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.ClearNight.Location = new System.Drawing.Point(112, 303);
             this.ClearNight.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.ClearNight.Name = "ClearNight";
@@ -252,10 +249,13 @@
             // 
             // ClearEvening
             // 
+            this.ClearEvening.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn1000;
+            this.ClearEvening.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClearEvening.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ClearEvening.FlatAppearance.BorderSize = 0;
             this.ClearEvening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearEvening.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ClearEvening.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.ClearEvening.Location = new System.Drawing.Point(112, 203);
             this.ClearEvening.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.ClearEvening.Name = "ClearEvening";
@@ -269,10 +269,13 @@
             // 
             // ClearAfternoon
             // 
+            this.ClearAfternoon.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn1000;
+            this.ClearAfternoon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClearAfternoon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ClearAfternoon.FlatAppearance.BorderSize = 0;
             this.ClearAfternoon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearAfternoon.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ClearAfternoon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.ClearAfternoon.Location = new System.Drawing.Point(112, 103);
             this.ClearAfternoon.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.ClearAfternoon.Name = "ClearAfternoon";
@@ -288,6 +291,7 @@
             // 
             this.Plan3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Plan3.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.Plan3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.Plan3.Location = new System.Drawing.Point(43, 303);
             this.Plan3.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.Plan3.Name = "Plan3";
@@ -300,6 +304,7 @@
             // 
             this.Plan2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Plan2.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.Plan2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.Plan2.Location = new System.Drawing.Point(43, 203);
             this.Plan2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.Plan2.Name = "Plan2";
@@ -314,6 +319,7 @@
             this.Plan1.BackColor = System.Drawing.Color.Transparent;
             this.Plan1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Plan1.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.Plan1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.Plan1.Location = new System.Drawing.Point(43, 103);
             this.Plan1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.Plan1.Name = "Plan1";
@@ -326,6 +332,7 @@
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.label10.Location = new System.Drawing.Point(3, 303);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.label10.Name = "label10";
@@ -338,6 +345,7 @@
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.label8.Location = new System.Drawing.Point(3, 203);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label8.Name = "label8";
@@ -350,6 +358,7 @@
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.label6.Location = new System.Drawing.Point(3, 103);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label6.Name = "label6";
@@ -362,6 +371,7 @@
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.label4.Location = new System.Drawing.Point(3, 3);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.label4.Name = "label4";
@@ -375,7 +385,7 @@
             this.Plan0.BackColor = System.Drawing.Color.Transparent;
             this.Plan0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Plan0.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Plan0.ForeColor = System.Drawing.Color.Black;
+            this.Plan0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
             this.Plan0.Location = new System.Drawing.Point(43, 3);
             this.Plan0.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.Plan0.Name = "Plan0";
@@ -386,10 +396,13 @@
             // 
             // ClearMorning
             // 
+            this.ClearMorning.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn1000;
+            this.ClearMorning.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClearMorning.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ClearMorning.FlatAppearance.BorderSize = 0;
             this.ClearMorning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearMorning.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ClearMorning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.ClearMorning.Location = new System.Drawing.Point(112, 3);
             this.ClearMorning.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.ClearMorning.Name = "ClearMorning";
@@ -403,7 +416,9 @@
             // 
             // BtnNight
             // 
-            this.BtnNight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnNight.BackColor = System.Drawing.Color.Transparent;
+            this.BtnNight.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnNight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnNight.FlatAppearance.BorderSize = 0;
             this.BtnNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNight.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
@@ -416,6 +431,8 @@
             this.BtnNight.Text = "今晚通宵学习！";
             this.BtnNight.UseVisualStyleBackColor = false;
             this.BtnNight.Click += new System.EventHandler(this.BtnNight_Click);
+            this.BtnNight.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnNight.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // label11
             // 
@@ -425,12 +442,14 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(299, 58);
             this.label11.TabIndex = 9;
-            this.label11.Text = "将需要复习的课程\r\n添加到右侧的计划安排中吧！";
+            this.label11.Text = "将需要复习的课程\r\n双击添加到右侧的计划安排中吧！";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SubmitBtn
             // 
-            this.SubmitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.SubmitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.SubmitBtn.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.SubmitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SubmitBtn.FlatAppearance.BorderSize = 0;
             this.SubmitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitBtn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -443,10 +462,14 @@
             this.SubmitBtn.Text = "提交计划";
             this.SubmitBtn.UseVisualStyleBackColor = false;
             this.SubmitBtn.Click += new System.EventHandler(this.FinishButton_Click);
+            this.SubmitBtn.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.SubmitBtn.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnExit
             // 
-            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnExit.BackColor = System.Drawing.Color.Transparent;
+            this.BtnExit.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnExit.FlatAppearance.BorderSize = 0;
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -460,10 +483,14 @@
             this.BtnExit.Text = "退出游戏";
             this.BtnExit.UseVisualStyleBackColor = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            this.BtnExit.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnExit.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnSaveGame
             // 
-            this.BtnSaveGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnSaveGame.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSaveGame.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnSaveGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSaveGame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSaveGame.FlatAppearance.BorderSize = 0;
             this.BtnSaveGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -477,10 +504,14 @@
             this.BtnSaveGame.Text = "保存游戏";
             this.BtnSaveGame.UseVisualStyleBackColor = false;
             this.BtnSaveGame.Click += new System.EventHandler(this.BtnSaveGame_Click);
+            this.BtnSaveGame.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnSaveGame.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnHelp
             // 
-            this.BtnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnHelp.BackColor = System.Drawing.Color.Transparent;
+            this.BtnHelp.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnHelp.FlatAppearance.BorderSize = 0;
             this.BtnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -494,10 +525,14 @@
             this.BtnHelp.Text = "帮助";
             this.BtnHelp.UseVisualStyleBackColor = false;
             this.BtnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
+            this.BtnHelp.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnHelp.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnSetting
             // 
-            this.BtnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSetting.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSetting.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSetting.FlatAppearance.BorderSize = 0;
             this.BtnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -511,10 +546,14 @@
             this.BtnSetting.Text = "设置";
             this.BtnSetting.UseVisualStyleBackColor = false;
             this.BtnSetting.Click += new System.EventHandler(this.BtnSetting_Click);
+            this.BtnSetting.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnSetting.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnLoadGame
             // 
-            this.BtnLoadGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnLoadGame.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoadGame.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnLoadGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLoadGame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnLoadGame.FlatAppearance.BorderSize = 0;
             this.BtnLoadGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -529,10 +568,14 @@
             this.BtnLoadGame.Text = "读取游戏";
             this.BtnLoadGame.UseVisualStyleBackColor = false;
             this.BtnLoadGame.Click += new System.EventHandler(this.BtnLoadGame_Click);
+            this.BtnLoadGame.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnLoadGame.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BtnReturnMenu
             // 
-            this.BtnReturnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(57)))), ((int)(((byte)(6)))));
+            this.BtnReturnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.BtnReturnMenu.BackgroundImage = global::FinalHomework_Game.Properties.Resources.Btn2000;
+            this.BtnReturnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnReturnMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnReturnMenu.FlatAppearance.BorderSize = 0;
             this.BtnReturnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -546,6 +589,8 @@
             this.BtnReturnMenu.Text = "返回菜单";
             this.BtnReturnMenu.UseVisualStyleBackColor = false;
             this.BtnReturnMenu.Click += new System.EventHandler(this.BtnReturnMenu_Click);
+            this.BtnReturnMenu.MouseEnter += new System.EventHandler(this.BtnList_Enter);
+            this.BtnReturnMenu.MouseLeave += new System.EventHandler(this.BtnList_Leave);
             // 
             // BuffLbl
             // 
@@ -563,7 +608,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
-            this.label2.Location = new System.Drawing.Point(3, 67);
+            this.label2.Location = new System.Drawing.Point(3, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 27);
             this.label2.TabIndex = 17;
@@ -601,69 +646,10 @@
             this.panel2.Size = new System.Drawing.Size(307, 106);
             this.panel2.TabIndex = 21;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(214, 29);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 106);
-            this.panel1.TabIndex = 3;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(100, 33);
-            this.label13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 67);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "复习思修";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
-            this.label9.Location = new System.Drawing.Point(100, 3);
-            this.label9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 28);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "忌";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(4, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 67);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "复习高等数学";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
-            this.label7.Location = new System.Drawing.Point(3, 3);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 28);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "宜";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // PressureBar
             // 
             this.PressureBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
-            this.PressureBar.Location = new System.Drawing.Point(96, 71);
+            this.PressureBar.Location = new System.Drawing.Point(100, 75);
             this.PressureBar.Name = "PressureBar";
             this.PressureBar.Size = new System.Drawing.Size(204, 23);
             this.PressureBar.TabIndex = 22;
@@ -674,7 +660,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(223)))));
             this.BackgroundImage = global::FinalHomework_Game.Properties.Resources.MainGame;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.SubmitBtn);
@@ -695,7 +680,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -739,10 +723,5 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private CustomProgressBar PressureBar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
     }
 }

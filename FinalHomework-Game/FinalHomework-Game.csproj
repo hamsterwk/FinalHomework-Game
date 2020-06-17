@@ -222,6 +222,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Images\LogForm.png" />
     <None Include="Images\MainGame.png" />
     <None Include="Images\ChoiceForm.png" />
     <None Include="Images\AlertForm.png" />

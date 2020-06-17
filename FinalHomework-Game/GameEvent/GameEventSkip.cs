@@ -10,7 +10,6 @@ namespace FinalHomework_Game.GameEvent
 {
     class GameEventSkip:GameEventBase
     {//事件--跳过回合
-        private int AddFactor;
         public static new int TypeID = 2;
         private static new int weight = 5;//该事件的权重。
         public static new List<string> MsgList = new List<string>();
