@@ -106,7 +106,6 @@ namespace FinalHomework_Game
             SaveGameList = new List<Game>();
             LogList = new List<List<string>>();
             ReadChapter();
-            ReadLog();
             ReadEvent();
         }
 
