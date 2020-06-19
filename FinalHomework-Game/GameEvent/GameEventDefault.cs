@@ -10,7 +10,7 @@ namespace FinalHomework_Game.GameEvent
 {
     class GameEventDefault:GameEventBase
     {
-        public static new int TypeID = 0;
+        public static new int TypeID = 2;
         private static new int weight = 70;//该事件的权重。
         public static new List<string> MsgList = new List<string>();
         public static new string EventName = "DefaultEvent";
@@ -40,14 +40,15 @@ namespace FinalHomework_Game.GameEvent
         public override string GetLog(Course course, Game game)
         {
             if (MsgList.Count() == 0) return "";
-            string rtn = MsgList[GameSystem.random.Next(MsgList.Count())];
+            string rtn = MsgList[GameSystem.random.Next(MsgList.Count())] + Description;
             rtn = Regex.Replace(rtn, "<0>", course.CourseName);
-            return rtn + Description;
+            return rtn;
         }
 
         public override void PerformEvent(int period, Course course, Game game)
         {
             base.PerformEvent(period, course, game);
+            
         }
     }
 }

@@ -19,10 +19,14 @@ namespace FinalHomework_Game
         private Plan curPlan;
         private void SlowPrint(string str)
         {
+            
             LogText.Text = "";
-            Application.DoEvents();
-            Thread.Sleep(500);
-            foreach(char buf in str)
+            if (GameSystem.FastDisplay == true)
+            {
+                LogText.Text = str;
+                return;
+            }
+            foreach (char buf in str)
             {
                 LogText.Text = LogText.Text + buf;
                 LogText.Refresh();
@@ -143,7 +147,16 @@ namespace FinalHomework_Game
 
         private void LogBox_TextChanged(object sender, EventArgs e)
         {
-            Application.DoEvents();
+            
+        }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
         }
     }
 }

@@ -8,18 +8,18 @@ using System.Text.RegularExpressions;
 
 namespace FinalHomework_Game.GameEvent
 {
-    class GameEventSub:GameEventBase
+    class GameEventCourseAdd:GameEventBase
     {
-        private int SubFactor;
-        public static new int TypeID = 6;
-        public static new int weight = 5;//该事件的权重。
+        public static new int TypeID = 8;
+        private static new int weight = 3;//该事件的权重。
         public static new List<string> MsgList = new List<string>();
-        public static new string EventName = "SubEvent";
-        public static new string Description = "（这一时间段的复习效果有所降低。）";
+        public static new string EventName = "CourseAddEvent";
+        public static new string Description = "【<0>】之后的复习效率都会相对提高。";
         public override int Weight { get => weight; set => weight = value; }
-        public GameEventSub()
+        public int AddFactor;
+        public GameEventCourseAdd()
         {
-            SubFactor = GameSystem.random.Next(3);
+            AddFactor = GameSystem.random.Next(3) + 1;
         }
 
         public override int Load()
@@ -37,19 +37,19 @@ namespace FinalHomework_Game.GameEvent
             }
         }
 
-        public override string GetLog( Course course, Game game)
+        public override string GetLog(Course course, Game game)
         {
             if (MsgList.Count() == 0) return "";
-            string rtn = MsgList[GameSystem.random.Next(MsgList.Count())];
+            string rtn = MsgList[GameSystem.random.Next(MsgList.Count())]+ Description;
             rtn = Regex.Replace(rtn, "<0>", course.CourseName);
-            return rtn + Description;
+            return rtn;
         }
 
         public override void PerformEvent(int period, Course course1, Game game)
         {
+            base.PerformEvent(period, course1, game);
             Course course = (from c in game.GameChapter.CourseList where course1.CourseName == c.CourseName select c).ToList()[0];
-            base.PerformEvent(period, course, game);
-            course.Score -= SubFactor;
+            course.ReviewBonus += AddFactor;
         }
     }
 }

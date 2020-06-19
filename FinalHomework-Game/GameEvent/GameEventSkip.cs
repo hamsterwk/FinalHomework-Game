@@ -10,7 +10,7 @@ namespace FinalHomework_Game.GameEvent
 {
     class GameEventSkip:GameEventBase
     {//事件--跳过回合
-        public static new int TypeID = 2;
+        public static new int TypeID = 5;
         private static new int weight = 5;//该事件的权重。
         public static new List<string> MsgList = new List<string>();
         public static new string EventName = "SkipEvent";
@@ -42,12 +42,13 @@ namespace FinalHomework_Game.GameEvent
         {
             if (MsgList.Count() == 0) return "";
             string rtn = MsgList[GameSystem.random.Next(MsgList.Count())];
-            rtn = Regex.Replace(rtn, "<1>", course.CourseName);
+            rtn = Regex.Replace(rtn, "<1>", course.Description);
             return rtn + Description;
         }
 
         public override void PerformEvent(int period, Course course1, Game game)
         {
+            course1.Description = course1.CourseName;
             course1.CourseName = "空";
             game.Pressure -= 3;
         }

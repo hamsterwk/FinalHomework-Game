@@ -27,11 +27,17 @@ namespace FinalHomework_Game.Forms
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             PlaySpeedBar.Value = PlaySpeedBar.Maximum - GameSystem.DEFAULT_PLAYSPEED;
+            checkBox1.Checked = GameSystem.FastDisplay = false;
         }
 
         private void PlaySpeedBar_Scroll(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            GameSystem.FastDisplay = checkBox1.Checked;
         }
     }
 }

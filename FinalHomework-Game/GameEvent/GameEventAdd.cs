@@ -11,7 +11,7 @@ namespace FinalHomework_Game.GameEvent
     class GameEventAdd:GameEventBase
     {//事件--课程复习效率增加
         private int AddFactor;
-        public static new int TypeID = 2;
+        public static new int TypeID = 1;
         private static new int weight = 5;//该事件的权重。
         public static new List<string> MsgList = new List<string>();
         public static new string EventName = "AddEvent";

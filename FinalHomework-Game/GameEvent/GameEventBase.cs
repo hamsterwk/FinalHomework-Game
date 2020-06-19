@@ -11,7 +11,7 @@ namespace FinalHomework_Game.GameEvent
     public class GameEventBase
     {//所有事件的基类。
         public static int TypeID=0;
-        public static int weight=1;//该事件的权重。
+        public static int weight=0;//该事件的权重。
         public static List<string> MsgList;//该事件显示的文案
         public static string EventName = "BaseEvent";
         public static string Description = "（基本事件。）";

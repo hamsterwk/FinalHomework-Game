@@ -81,7 +81,7 @@ namespace FinalHomework_Game
             foreach (Label label in PlanLabelList)
             {
                 label.Click += new EventHandler(SetRightFocus);
-                label.Text = "未安排";
+                label.Text = "未安排\r\n（休息）";
             }
             DisableLabel(3, "好好休息");
             //通宵事件
@@ -125,7 +125,7 @@ namespace FinalHomework_Game
             RenderForm(curGame);
 
         }
-        void DisableLabel(int i, string hint = "未安排")
+        void DisableLabel(int i, string hint = "未安排\r\n（休息）")
         {
             Label label = PlanLabelList[i];
             Button button = BtnList[i];
@@ -134,7 +134,7 @@ namespace FinalHomework_Game
             StatusList[i] = false;
             EventList[i] = new GameEventNull();
         }
-        void EnableLabel(int i, string hint = "未安排")
+        void EnableLabel(int i, string hint = "未安排\r\n（休息）")
         {
             Label label = PlanLabelList[i];
             Button button = BtnList[i];
@@ -265,7 +265,7 @@ namespace FinalHomework_Game
         private void ClearMorning_Click(object sender, EventArgs e)
         {
             if (StatusList[0] == false) return;
-            PlanLabelList[0].Text = "未安排";
+            PlanLabelList[0].Text = "未安排\r\n（休息）";
             PlanList[0] = new Course();
             SetRightFocus(PlanLabelList[0], e);
         }
@@ -273,7 +273,7 @@ namespace FinalHomework_Game
         private void ClearAfternoon_Click(object sender, EventArgs e)
         {
             if (StatusList[1] == false) return;
-            PlanLabelList[1].Text = "未安排";
+            PlanLabelList[1].Text = "未安排\r\n（休息）";
             PlanList[1] = new Course();
             SetRightFocus(PlanLabelList[1], e);
         }
@@ -281,7 +281,7 @@ namespace FinalHomework_Game
         private void ClearEvening_Click(object sender, EventArgs e)
         {
             if (StatusList[2] == false) return;
-            PlanLabelList[2].Text = "未安排";
+            PlanLabelList[2].Text = "未安排\r\n（休息）";
             PlanList[2] = new Course();
             SetRightFocus(PlanLabelList[2], e);
         }
@@ -289,7 +289,7 @@ namespace FinalHomework_Game
         private void ClearNight_Click(object sender, EventArgs e)
         {
             if (StatusList[3] == false) return;
-            PlanLabelList[3].Text = "未安排";
+            PlanLabelList[3].Text = "未安排\r\n（休息）";
             PlanList[3] = new Course();
             SetRightFocus(PlanLabelList[3], e);
         }

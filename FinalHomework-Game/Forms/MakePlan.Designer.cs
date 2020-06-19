@@ -325,7 +325,7 @@
             this.Plan1.Name = "Plan1";
             this.Plan1.Size = new System.Drawing.Size(66, 97);
             this.Plan1.TabIndex = 8;
-            this.Plan1.Text = "未安排";
+            this.Plan1.Text = "未安排\r\n（休息）\r\n";
             this.Plan1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -391,7 +391,7 @@
             this.Plan0.Name = "Plan0";
             this.Plan0.Size = new System.Drawing.Size(66, 97);
             this.Plan0.TabIndex = 7;
-            this.Plan0.Text = "未安排";
+            this.Plan0.Text = "未安排\r\n（休息）\r\n";
             this.Plan0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClearMorning

@@ -23,23 +23,11 @@ namespace FinalHomework_Game
         public static string[] TimeName = {"上午", "中午", "晚上" };
         public static List<List<string>> LogList;
         public static int ErrorCode=0;
-        public static string[] ErrMsg = { "","读取过场文本失败", "无可用的剧本" };
-        public static string[] LogMsg={
-            "（考试的效果也会稍微影响到压力值。）",
-            "（放松过后压力有所下降。）",
-            "",
-            "（这个时间段的复习计划作废了。）",
-            "（这个时间段的复习效率有所下降。）",
-            "（这个时间段的复习效率由所上升。）",
-            "（对这门课的理解出现了偏差，成绩有所降低。）",
-            "（对这门课的理解加深了。）",
-            "（这门课此后的复习效率都会下降。）",
-            "（这门课此后的复习效率都会有所提升。）",
-            "（这个时间段的复习计划被替换了。）",
-            };
+        public static string[] ErrMsg = { "","读取过场文本失败！", "无可用的剧本！" };
         internal static readonly int DEFAULT_PLAYSPEED = 10;
         public static int EventWeightSum=0;//事件权重之和。
         public static List<Type> Eventtypes;
+        public static bool FastDisplay = false;
         static void ReadChapter()
         {//从文件夹中读取各个剧本
             DirectoryInfo dir = new DirectoryInfo(chapterDir);
@@ -69,7 +57,7 @@ namespace FinalHomework_Game
             }
             if (ChapterList.Count() == 0) { ErrorCode = 2; }
         }
-        public static void ReadPartLog(int i,string originalLines)
+        /*public static void ReadPartLog(int i,string originalLines)
         {
             string[] Lines = Regex.Split(originalLines, "\r\n");
             List<string> curLogList = new List<string>();
@@ -78,9 +66,9 @@ namespace FinalHomework_Game
                 curLogList.Add(line);
             }
             LogList.Add(curLogList);
-        }
+        }*/
 
-        public static void ReadLog()
+       /* public static void ReadLog()
         {
             
             //读取日志语句
@@ -98,7 +86,7 @@ namespace FinalHomework_Game
             {
                 ErrorCode = 1;
             }
-        }
+        }*/
         public static void Init()
         {
             random = new Random();
@@ -118,7 +106,11 @@ namespace FinalHomework_Game
                 GameEventBase baseevent = (GameEventBase)Activator.CreateInstance(type);
                 Eventtypes.Add(type);
                 EventWeightSum += baseevent.Weight;
-                baseevent.Load();
+                if(baseevent.Load()==-1)
+                {
+                    ErrorCode = 1;
+                    return;
+                }
             }
         }
 

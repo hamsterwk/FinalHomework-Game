@@ -129,8 +129,11 @@
     </Compile>
     <Compile Include="GameEvent\GameEventBase.cs" />
     <Compile Include="GameEvent\GameEventAdd.cs" />
+    <Compile Include="GameEvent\GameEventCourseAdd.cs" />
+    <Compile Include="GameEvent\GameEventCourseSub.cs" />
     <Compile Include="GameEvent\GameEventDefault.cs" />
     <Compile Include="GameEvent\GameEventNull.cs" />
+    <Compile Include="GameEvent\GameEventReplace.cs" />
     <Compile Include="GameEvent\GameEventSkip.cs" />
     <Compile Include="GameEvent\GameEventSub.cs" />
     <Compile Include="GameEvent\GameEventTest.cs" />

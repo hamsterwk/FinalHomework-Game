@@ -11,11 +11,11 @@ namespace FinalHomework_Game.GameEvent
     class GameEventTest:GameEventBase
     {
         private int testFactor;
-        public static new int TypeID = 1;
+        public static new int TypeID = 7;
         public static new int weight = 0;//该事件的权重。(该事件不会随机生成。)
         public static new List<string> MsgList = new List<string>();
         public static new string EventName = "TestEvent";
-        public static new string Description = "（考试效果也会影响到状态。）";
+        public static new string Description = "（【<0>】的考试结束。临场发挥的情况会些许影响到压力值。）";
         public override int Weight { get => weight; set => weight = value; }
         public GameEventTest()
         {
@@ -40,9 +40,9 @@ namespace FinalHomework_Game.GameEvent
 
         public override string GetLog(Course course, Game game)
         {
-            string rtn = MsgList[course.TestFactor + 5];
+            string rtn = MsgList[course.TestFactor + 5] + Description;
             rtn = Regex.Replace(rtn, "<0>", course.CourseName);
-            return rtn + Description;
+            return rtn;
         }
 
         public override void PerformEvent(int period, Course course1, Game game)

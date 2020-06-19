@@ -10,7 +10,7 @@ namespace FinalHomework_Game.GameEvent
 {
     class GameEventNull:GameEventBase
     {
-        public static new int TypeID = 1;
+        public static new int TypeID = 4;
         public static new int weight = 0;//该事件的权重。(该事件不会随机生成。)
         public static new List<string> MsgList = new List<string>();
         public static new string EventName = "NullEvent";
@@ -27,7 +27,6 @@ namespace FinalHomework_Game.GameEvent
                 StreamReader reader = new StreamReader($"./Event/{EventName}/Log.txt", Encoding.UTF8);
                 string[] LineSets = Regex.Split(reader.ReadToEnd(), "\r\n");
                 foreach (string line in LineSets) MsgList.Add(line);
-                if (MsgList.Count < 11) return -1;
                 return 1;
             }
             catch
