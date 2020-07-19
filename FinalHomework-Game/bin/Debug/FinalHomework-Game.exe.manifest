@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalHomework-Game.exe" size="219616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalHomework-Game.exe" size="162272">
       <assemblyIdentity name="FinalHomework-Game" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>H/nVcTP1eqqJPRMOFB7NNM0vQWHlq+xb6JmYaBKPPIs=</dsig:DigestValue>
+        <dsig:DigestValue>amSKh9nsqideaT0miE6OsPUVzEWCxfOQ4SG2viMA++8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
